@@ -43,7 +43,7 @@ jobs:
         run: echo "Test10 Pass"
       # 式の一部を${{}}でネスト、式にNOT節
       - name: Test11
-        if: ${{ !false }} == true
+        if: ${{ !true }} == true
         run: echo "Test11 Pass"
       # 式全体を${{}}でネスト、式にNOT節
       - name: Test12
