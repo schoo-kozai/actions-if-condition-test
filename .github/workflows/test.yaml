@@ -18,7 +18,7 @@ jobs:
         if: false
         run: echo "Test3 Pass"
 
-      # NOT（!）の場合は${{}}または""などのエスケープが必要（Test4 ~ Test6）
+      # 否定演算子を使う場合は${{}}または""などのエスケープが必要（Test4 ~ Test6）
       - name: Test4
         if: ${{ !true }}
         run: echo "Test4 Pass"
